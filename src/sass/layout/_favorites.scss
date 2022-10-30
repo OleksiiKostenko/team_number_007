@@ -6,7 +6,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
+////Класи для заголовку та тексту/////
   &__title {
     font-size: 28px;
     line-height: 1.17;
@@ -36,21 +36,55 @@
     }
   }
 
-&__list-mob {
+////// Класи списку картинок для мобільної версії\\\\\
+  &__list-mob {
+    @media screen and (min-width: 767.9px) {
+      display: none;
+    }
+
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
+  }
 
-&__item-mob {
-    
-    border: 11px solid #FFE550;
+  &__item-mob {
+    border: 11px solid #ffe550;
     border-radius: 139.658px;
     margin-left: auto;
     margin-right: auto;
-}
- &__img {
-    padding: 20px;
- }
-}
+  }
 
+  
+  
+  &__img {
+    padding: 20px;
+  }
+
+  ////// Класи списку картинок для пк та планшету \\\\\
+  &__list {
+    
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    
+    @media screen and (min-width: 768px) {
+      border: 14px solid #ffe550;
+      border-radius: 167.166px;
+      
+    }
+
+    @media screen and (min-width: 1280px) {
+      border: 16px solid #ffe550;
+      border-radius: 197px;
+    }
+  }
+}
