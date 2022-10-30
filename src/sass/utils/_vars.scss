@@ -1,6 +1,7 @@
 :root {
     --text-color-priority: #2C2C2C;
     --background-site-color: #FEFEFE;
+    --tablet-nav-color: #000000;
     --secondary-site-color: #FFE550;
     --background-btn-site-hover: #BBF330;
     --hover-button-color: #B5FF00;
@@ -42,7 +43,7 @@ img {
 }
 
 a {
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .list {

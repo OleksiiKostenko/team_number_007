@@ -1,0 +1,112 @@
+.header {
+    background-color: var(--background-site-color);
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    position: relative;
+
+}
+
+.header__container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+
+.header__logo {
+
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+   
+}
+
+.nav__wrapper {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+            margin-right: 28px;
+        }
+        
+    }
+
+}
+
+
+.nav__link {
+    
+    color: var(--tablet-nav-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1280px) {
+        color: var(--text-color-priority);
+        }
+
+   
+
+    &:hover,
+    &:focus {
+        color: var(--icon-active-border-color);
+    }
+}
+
+.nav__link--current {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--background-btn-site-hover);
+
+    @media screen and (min-width: 1280px) {
+    font-weight: 700;
+    }
+}
+
+.header__button {
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 18px;
+
+        color: var(--text-color-priority);
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        // это 1.5?
+        background-color: var(--background-btn-site-hover);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 30px;  
+    }
+
+    &:hover, &:focus, &:active {
+        background-color: var(--hover-button-color);
+    }
+}
