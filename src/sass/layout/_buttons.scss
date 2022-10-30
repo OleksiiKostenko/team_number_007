@@ -1,12 +1,17 @@
-.header__button {
+%button {
     display: inline-block;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-    padding: 6px 18px;
-    background-color: var(--background-btn-site-hover);
     border-radius: 30px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__button {
+    @extend %button;
+    padding: 6px 18px;
+    background-color: var(--background-btn-site-hover);
+    border-style: none;
 
     &:hover {
     background-color: var(--hover-button-color);
@@ -14,30 +19,22 @@
 }
 
 .hero__button {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
+    @extend %button;
     padding: 6px 18px;
     background-color: var(--background-btn-site-hover);
-    border-radius: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    border-style: none;
+    
     &:hover {
     background-color: var(--hover-button-color);
     }
 }
 
 .offerings__button {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
+    @extend %button;
     padding: 10px 22px;
     background-color: var(--background-icon-btn-color);
     border: 2px solid var(--icon-active-border-color);
     border-radius: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
     border: 2px solid var(--buttom-border-hover-color);
@@ -45,47 +42,32 @@
 }
 
 .subscribe__button {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
+    @extend %button;
+    padding: 11px 22px;
+    background-color: var(--background-btn-site-hover);
+    border-style: none;
+
+    &:hover {
+        background-color: var(--hover-button-color);
+    }
+}
+
+.footer__button {
+    @extend %button;
     padding: 11px 22px;
     background-color: var(--background-icon-btn-color);
     border: 0.85px solid var(--icon-active-border-color);
-    border-radius: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:hover {
     background-color:var(--secondary-site-color);
     }
 }
 
-.footer__button {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    padding: 11px 22px;
-    background-color: var(--background-btn-site-hover);
-    border-style: none;
-    border-radius: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover {
-        background-color: var( --hover-button-color);
-    }
-}
-
 .modal__button {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
+    @extend %button;
     padding: 10px 38px;
     background-color: var(--background-icon-btn-color);
     border: 2px solid var(--icon-active-border-color);
-    border-radius: 30px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     &:hover {
     background-color: var(--background-btn-site-hover);
