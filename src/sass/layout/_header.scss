@@ -100,8 +100,7 @@
         color: var(--text-color-priority);
         font-weight: 500;
         font-size: 13px;
-        line-height: 150%;
-        // это 1.5?
+        line-height: 1.5;
         background-color: var(--background-btn-site-hover);
         cursor: pointer;
         border: none;
@@ -151,8 +150,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: currentColor;
-    // or color: var(--icon-active-border-color);
+    fill: var(--icon-active-border-color);
+
 
     margin: 0;
     padding: 0;
@@ -167,7 +166,7 @@
     &:hover,
     &:focus {
         fill: var(--secondary-site-color);
-        // or color: var(--secondary-site-color);
+
     }
 
     @media screen and (min-width: 768px) {
@@ -178,6 +177,9 @@
         position: absolute;
         top: 4px;
         right: 4px;
+        fill: var(--text-color-priority);
+
+
     }
 } 
 
@@ -195,6 +197,7 @@
     display: block;
     width: 100%;
     padding: 16px;
+    outline: none;
 
     &:hover, &:focus, &:active {
         background-color: var(--background-btn-site-hover);
