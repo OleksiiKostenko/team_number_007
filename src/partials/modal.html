@@ -1,0 +1,24 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <form action="#" class="modal__order-form order-form">
+            <button type="reset" class="modal__close-btn" data-modal-close>
+                <svg class="modal__svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-modal-close" class="modal__close-icon"></use>
+                </svg>
+            </button>
+            <strong class="order-form__title">Order Form</strong>
+            <label class="order-form__label" for="input-name">Name</label>
+            <input type="text" name="name" class="order-form__input" placeholder="Your name" id="input-name" required
+                minlength="3" maxlength="25">
+            <p name="warning" class="order-form__warning">The name must be between 3 and 25 characters</p>
+            <label class="order-form__label" for="input-phone">Phone number</label>
+            <input type="tel" name="phone" class="order-form__input" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                id="input-phone" required minlength="10" maxlength="13">
+            <p name="warning" class="order-form__warning">This phone must be in the format 099 000 00 00</p>
+            <label class="order-form__label" for="input-mail">E-mail</label>
+            <input type="email" name="email" class="order-form__input" placeholder="example@gmail.com" id="input-mail"
+                required>
+            <p name="warning" class="order-form__warning">Please enter a valid email address</p>
+            <button type="submit" class="order-form__btn modal__button">Send</button>
+        </form>
+    </div>
