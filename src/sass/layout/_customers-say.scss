@@ -2,66 +2,66 @@
 background-color: var(--secondary-site-color);
 padding: 60px 20px;
 }
+
 .customers-title {
 font-weight: 700;
 font-size: 28px;
 line-height: 1.18;
 margin-bottom: 20px;
 } 
+
 .customers-text {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.19;
 margin-bottom: 32px;
 } 
-.customers-list__item {
-    background-color: var(--background-site-color);
-    border-radius: 25px;
-    padding: 8px 8px 10px;
-    }
-    .customers-list__text {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.17;
-        margin-bottom: 42px;
-        }
-@media screen and (min-width: 768px) {
-    .customers-list__item {
-        width: 336px;
-        height: 244px;
-    padding: 12px 12px 14px;
-    }
-    .customers-title {
-        font-size: 42px; 
-        line-height: 1.17;
-    } 
-    .customers-text {
-        font-size: 16px;
-    }
 
-    .customers-list {
-    display: flex;
-       }
-    .customers-list__item:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 32px;
-    }
-    .section-customers {
+.customers-list__item {
+background-color: var(--background-site-color);
+border-radius: 25px;
+padding: 8px 8px 10px;
+}
+
+.customers-list__text {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.17;
+margin-bottom: 42px;
+}
+
+@media screen and (min-width: 768px) {
+.section-customers {
     padding: 60px 32px 120px;
     }
-    .customers-list__text {
-    font-size: 18px;
-    }
-    }
+.customers-list__item {
+    width: 336px;
+    height: 244px;
+padding: 12px 12px 14px;
+}
+.customers-title {
+    font-size: 42px; 
+    line-height: 1.17;
+} 
+.customers-text {
+    font-size: 16px;
+}
 
-
+.customers-list {
+display: flex;
+    }
+.customers-list__item:not(:last-child) {
+margin-bottom: 0;
+margin-right: 32px;
+}
+.customers-list__text {
+font-size: 18px;
+}
+}
 
 .customers-list__item:not(:last-child) {
 margin-bottom: 24px;
 }
-
-
-
 
 .customers-photo {
     display: flex;
@@ -69,6 +69,7 @@ margin-bottom: 24px;
     height: 52px;
     border-right: 0.854167px solid #7EB101;
     }
+
 .customers-img {
     margin-right: 16px;
     width: 48px;
@@ -87,12 +88,25 @@ font-size: 14px;
 line-height: 150%;
 padding-bottom: 2px;
 }
+
 .customers-photo__text {
 font-weight: 400;
 font-size: 14px;
 line-height: 150%;    
 }
 
-
+@media screen and (min-width: 1280px) {
+.section-customers {
+padding: 100px 123px 200px 16px;
+}
+.customers-list__item {
+    width: 501px;
+    height: 227px;
+padding: 14px 14px 16px;
+}
+.customers-list__item:not(:last-child) {
+    margin-right: 139px;
+}
+}
 
 
