@@ -1,45 +1,68 @@
 <footer class="footer">
-  <div>
-    <a href="./index.html" class="link logo footer__logo"
-      ><svg width="66" height="52">
-        <use href="./images/icons.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <div class="nav__wrapper">
-      <nav>
-        <ul class="list nav__list">
-          <li class="nav__item">
-            <a href="#home" class="link nav__link nav__link--current">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="link nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#favorites" class="link nav__link">Favorites</a>
-          </li>
-          <li class="nav__item">
-            <a href="#reviews" class="link nav__link">Reviews</a>
-          </li>
-          <li class="nav__item">
-            <a href="#subscribe" class="link nav__link">Subscribe</a>
-          </li>
-        </ul>
-      </nav>
+  <div class="container">
+    <div class="footer__desktop">
+      <div class="footer__mobile">
+        <a href="./index.html" class="link footer__logo"
+          ><svg width="66" height="52">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="footer__nav">
+          <nav>
+            <ul class="list footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#home" class="link footer__nav-link">Home</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#about" class="link footer__nav-link">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#favorites" class="link footer__nav-link">Favorites</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#reviews" class="link footer__nav-link">Reviews</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#subscribe" class="link footer__nav-link">Subscribe</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <form class="footer__form">
+          <h3 class="footer__subtitle">Subscribe</h3>
+          <div class="footer__part">
+            <label for="mailfor"></label>
+            <input
+              type="email"
+              name="mail"
+              id="mailfor"
+              placeholder="Enter your email"
+              class="footer__input"
+            />
+            <button type="submit" class="footer__btn">Subscribe</button>
+          </div>
+        </form>
+        <p class="footer__input-p">
+          By subscribing you agree to with our
+          <a href="" class="footer__input-link">Privacy Policy</a>
+        </p>
+      </div>
     </div>
     <div>
-      <h3>Subscribe</h3>
-      <input type="mail" />
-      <label for=""></label>
-      <button></button>
-      <p>By subscribing you agree to with our <a href="">Privacy Policy</a></p>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a href="" class="footer__list-link">Privacy Policy</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="" class="footer__list-link">Terms of Service</a>
+        </li>
+        <li class="footer__list-item">
+          <a href="" class="footer__list-link">Cookies Settings</a>
+        </li>
+      </ul>
+      <p>2022 FoodSta. All right reserved.</p>
     </div>
-  </div>
-  <div>
-    <ul class="footer__link-list">
-      <li><a href="">Privacy Policy</a></li>
-      <li><a href="">Terms of Service</a></li>
-      <li><a href="">Cookies Settings</a></li>
-    </ul>
-    <p>2022 FoodSta. All right reserved.</p>
   </div>
 </footer>
