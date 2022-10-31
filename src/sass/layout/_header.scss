@@ -163,17 +163,16 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-    &:hover,
-    &:focus {
-        fill: var(--secondary-site-color);
-
-    }
-
     @media screen and (min-width: 768px) {
         display: none;
     }
 
-    &--position {
+    &__open:hover, &__open:focus {
+        fill: var(--secondary-site-color);
+
+    }
+
+    &__close {
         position: absolute;
         top: 4px;
         right: 4px;
