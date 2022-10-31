@@ -1,3 +1,4 @@
+<!-- hero__section -->
 <section class="hero__section">
     <div class="container">
         <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
@@ -5,10 +6,39 @@
             elementum tristique.
             Duis
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+
+        <!-- hero__button -->
         <button class="hero__button" type="button">Order Now</button>
 
+        <!-- hero__wrap -->
         <div class="hero__wrap">
 
+            <!-- picture -->
+            <picture>
+                <source media="(min-windth: 768px)" srcset="./images/hero/tablet-hero-photo1.png 1x, 
+                    ./images/hero/tablet-hero-photo1@2x.png 2x">
+
+                <source media="(min-windth: 1280px)" srcset="./images/hero/hero-photo1.png 1x, 
+                    ./images/hero/hero-photo1@2x.png 2x">
+
+                <img class="hero__img" srcset="
+                    ./images/hero/hero-photo1.png 1x,
+                    ./images/hero/hero-photo1@2x.png 2x" src="./images/hero/hero-photo1.png" alt="plate with sause"
+                    loading="lazy">
+            </picture>
+
+            <!-- slider__button -->
+            <button class="slaider__btn slaider__btn--left" type="button">
+                <svg class="btn__icon">
+                    <use href="./images/icons.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+
+            <button class="slaider__btn slaider__btn--rigth" type="button">
+                <svg class="btn__icon">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
