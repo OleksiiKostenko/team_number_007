@@ -1,54 +1,52 @@
-<section class="subscribe">
-  <div class="subscribe__container">
-    <div class="subscribe__picture-wrapper">
-      <picture>
-        <source
-          srcset="
-            ./images/subscribe/banan-mobile-1x.png 1x,
-            ./images/subscribe/banan-mobile-2x.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="
-            ./images/subscribe/banan-tablet-1x.png 1x,
-            ./images/subscribe/banan-tablet-2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/subscribe/banan-desktop-1x.png 1x,
-            ./images/subscribe/banan-desktop-2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <img
-          class="subscribe__subscribe-image"
-          src="./images/subscribe/banan-mobile-1x.png"
-          alt="banana"
-          loading="lazy"
-        />
-      </picture>
-    </div>
-    <h2 class="subscribe__subscribe-title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__subscribe-subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <div class="subscribe__subscribe-form">
-      <form action="#" class="subscribe__subscribe-field">
+<section class="subscribe" id="subscribe">
+  <div class="subscribe__container container">
+    <picture>
+      <source
+        srcset="
+          ./images/subscribe/banan-tablet-1x.png 1x,
+          ./images/subscribe/banan-tablet-2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/subscribe/banan-desktop-1x.png 1x,
+          ./images/subscribe/banan-desktop-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/subscribe/banan-mobile-1x.png 1x,
+          ./images/subscribe/banan-mobile-2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <img
+        src="./images/subscribe/banan-mobile-1x.png"
+        alt="banana"
+        class="subscribe__image"
+        loading="lazy"
+      />
+    </picture>
+    <div>
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe__form">
         <input
+          class="subscribe__input"
           type="email"
-          name="email"
           placeholder="Enter your email"
-          class="subscribe__subscribe-input"
-          id="subscribe-input"
+          required
         />
+        <button type="submit" class="subscribe__button">Subscribe</button>
       </form>
-      <button type="submit" class="subscribe__btn subscribe-btn--green">
-        Subscribe
-      </button>
     </div>
   </div>
 </section>
