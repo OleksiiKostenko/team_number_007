@@ -1,11 +1,3 @@
-// function validateForm() {
-//   const x = document.forms["myForm"]["fInput"].value;
-//   if (x == "") {
-//       const paragraph = document.querySelector('p');
-//       paragraph.textContent = 'This field is required';
-//   }
-// }
-
 const form = document.querySelector('#order-form');
 const errorMessages = {
     required: 'This field is required',
