@@ -1,11 +1,11 @@
 .offerings {
     background-color: var(--bgd-hero);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     @media screen and (max-width:767px) {
         background-image: url(../images/background/offerings-bg-mobile-01x.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         padding-top: 41px;
         padding-bottom: 60px;
 
@@ -20,9 +20,6 @@
 
     @media screen and (min-width:768px) {
         background-image: url(../images/background/offering-bg-tablet-1x.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         padding-top: 150px;
         padding-bottom: 100px;
 
@@ -36,9 +33,6 @@
 
     @media screen and (min-width:1280px) {
         background-image: url(../images/background/offering-bg-desktop-1x.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         padding-top: 177px;
         padding-bottom: 43px;
         display: flex;
@@ -194,7 +188,9 @@
     &-arrow {
         margin-left: 8px;
 
+    }
 
+}
 
 .offerings__dscr-btn {
     @media screen and (max-width:1279px) {
@@ -218,10 +214,11 @@
     @media screen and (min-width:1280px) {
         display: none;
     }
-
+}
 
 @media screen and (max-width: 1279px) {
     .offerings__btn-set {
         display: flex;
         align-items: center;
     }
+}
