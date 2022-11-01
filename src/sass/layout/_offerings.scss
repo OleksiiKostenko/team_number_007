@@ -76,7 +76,6 @@
     }
 }
 
-
 .offerings__title {
     font-weight: 700;
     font-size: 28px;
@@ -112,7 +111,6 @@
     }
 
 }
-
 
 @media screen and (min-width:768px) {
     .offerings__list {
@@ -164,25 +162,21 @@
     margin-bottom: 16px;
 }
 
-
 .offerings__sub-dscr {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 28px;
 
-
     @media screen and (min-width:320px) and (max-width:350px) {
         padding-right: 20px;
     }
-
 
     @media screen and (min-width:768px) {
         margin-bottom: 40px;
         width: 252px;
     }
 }
-
 
 .offerings__dscr-btn {
     border: none;
@@ -191,7 +185,6 @@
     font-size: 14px;
     line-height: 1.5;
     padding: 15px 0;
-
 
     @media screen and (min-width: 1280px) {
         display: none;
