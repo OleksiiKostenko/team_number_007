@@ -73,9 +73,10 @@
   }
 
   &__form {
+display: grid;
+
     @media screen and (min-width: 768px) {
       display: inline-block;
-      align-items: baseline;
     }
   }
 
@@ -98,7 +99,7 @@
   }
 
   &__button {
-    display: flex;
+    display: block;
     position: relative;
     font-weight: 500;
     font-size: 13px;
@@ -113,7 +114,7 @@
     cursor: pointer;
 
     @media screen and (min-width: 768px) {
-      display: inline;
+      display: inline-block;
       margin-left: 22px;
     }
 
