@@ -194,7 +194,9 @@
     &-arrow {
         margin-left: 8px;
 
+    }
 
+}
 
 .offerings__dscr-btn {
     @media screen and (max-width:1279px) {
@@ -218,10 +220,11 @@
     @media screen and (min-width:1280px) {
         display: none;
     }
-
+}
 
 @media screen and (max-width: 1279px) {
     .offerings__btn-set {
         display: flex;
         align-items: center;
     }
+}
