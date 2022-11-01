@@ -1,4 +1,6 @@
 .offerings {
+    background-color: var(--bgd-hero);
+
     @media screen and (max-width:767px) {
         background-image: url(../images/background/offerings-bg-mobile-01x.png);
         background-position: center center;
@@ -74,7 +76,6 @@
     }
 }
 
-
 .offerings__title {
     font-weight: 700;
     font-size: 28px;
@@ -94,14 +95,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 28px;
+    margin-bottom: 84px;
     padding-right: 2px;
 
     @media screen and (min-width:768px) {
         font-size: 16px;
         line-height: 1.17;
         width: 500px;
-        margin-bottom: 40px;
+        margin-bottom: 96px;
 
     }
 
@@ -111,7 +112,6 @@
 
 }
 
-
 @media screen and (min-width:768px) {
     .offerings__list {
         display: flex;
@@ -119,29 +119,40 @@
     }
 }
 
+.offerings__list-item {
+    position: relative;
+}
+
+.offerings__list-item::before {
+    position: absolute;
+    top: -56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../images/offerings/offerings-rocket.svg);
+    width: 48px;
+    height: 48px;
+    background-color: var(--background-icon-btn-color);
+    border-radius: 50%;
+
+}
+
+.offerings__list-item:not(:first-child):before {
+    content: url(../images/offerings/offerings-touch_app.svg);
+}
+
 .offerings__list-item:first-child {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 84px;
+    }
+
     @media screen and (min-width: 768px) {
         margin-right: 116px;
-
     }
 
     @media screen and (min-width: 1280px) {
         margin-right: 67px;
-
     }
-}
-
-.offerings__list-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-    background-color: var(--background-icon-btn-color);
-    margin-bottom: 8px;
-    border-radius: 50%;
-    fill: var(--icon-active-border-color);
-
 }
 
 .offerings__subtitle {
@@ -151,18 +162,15 @@
     margin-bottom: 16px;
 }
 
-
 .offerings__sub-dscr {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 28px;
 
-
     @media screen and (min-width:320px) and (max-width:350px) {
         padding-right: 20px;
     }
-
 
     @media screen and (min-width:768px) {
         margin-bottom: 40px;
@@ -171,37 +179,21 @@
 }
 
 
-.offerings__order-btn {
-    min-width: 102px;
-    min-height: 36px;
-    border: 2px solid var(--icon-active-border-color);
-    border-radius: 30px;
-    padding: 0;
-    margin-right: 24px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.54;
-    background-color: var(--background-icon-btn-color);
+.offerings__dscr-btn {
+    border: none;
+    background-color: var(--secondary-site-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 0;
 
-    &:active {
-        border-color: var(--buttom-border-hover-color);
-
+    @media screen and (min-width: 1280px) {
+        display: none;
     }
 
-    @media screen and (min-width:1280px) {
-        margin-right: 0;
-    }
+    &-arrow {
+        margin-left: 8px;
 
-}
-
-@media screen and (min-width:1280px) {
-
-    .offerings__order-btn:hover,
-    .offerings__order-btn:focus {
-        border-color: var(--buttom-border-hover-color);
-    }
-
-}
 
 
 .offerings__dscr-btn {
@@ -227,11 +219,9 @@
         display: none;
     }
 
-}
 
-
-
-.offerings__btn-set {
-    display: flex;
-    align-items: center;
-}
+@media screen and (max-width: 1279px) {
+    .offerings__btn-set {
+        display: flex;
+        align-items: center;
+    }
