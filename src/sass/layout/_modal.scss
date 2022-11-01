@@ -50,6 +50,7 @@
         padding: 0;
         outline: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
     }
 
     &__close-svg {
@@ -79,7 +80,7 @@
 
     &__label {
         display: block;
-        // margin-top: 24px;
+        margin-left: 12px;
         margin-bottom: 2px;
         font-weight: 500;
         font-size: 16px;
@@ -99,7 +100,11 @@
         line-height: 1.25;
         outline: none;
 
-        &:invalid:placeholder-shown {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:invalid:not(.is-invalid):placeholder-shown {
             border: 1px solid var(--icon-active-border-color);
             margin-bottom: 24px;
 
@@ -107,52 +112,42 @@
                 display: none;
             }
 
-            &~.order-form__btn {
-                border: 2px solid var(--icon-active-border-color);
+            &:last-of-type {
+                margin-bottom: 32px;
             }
         }
 
-        &:invalid {
-            border-color: var(--alert-input-color);
-            margin-bottom: 0;
-
-            &~.order-form__btn {
-                border: 2px solid var(--alert-input-color);
+        &.is-valid {
+            &:last-of-type {
+                margin-bottom: 32px;
             }
-        }
-
-        &:default+.order-form__warning {
-            display: none;
-        }
-
-        &:valid {
 
             &+.order-form__warning {
                 display: none;
             }
-
-            &~.order-form__btn {
-                background: var(--hover-button-color);
-            }
         }
 
-        &:invalid+.order-form__warning {
+        &.is-invalid {
+            border-color: var(--alert-input-color);
+            margin-bottom: 0;
+        }
+
+        &.is-invalid + .order-form__warning {
             display: flex;
-            align-items: center;
+            align-items: baseline;
             margin-bottom: 9px;
             font-weight: 500;
             font-size: 11px;
             line-height: 1.4;
             color: var(--alert-input-color);
 
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 11px;
-                height: 11px;
-                margin-left: 12px;
-                margin-right: 4px;
-                background-image: url(../images/icons.svg#icon-warning);
+            &:last-of-type {
+                margin-bottom: 14px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 13px;
+                margin-bottom: 6px;
             }
         }
 
@@ -161,12 +156,62 @@
         }
     }
 
+    &__warning-icon {
+        margin-right: 4px;
+    }
+
     &__btn {
-        margin: 32px auto 0;
+        margin: 0 auto;
         max-width: 106px;
         padding: 10px 38px;
         background-color: var(--background-icon-btn-color);
         border: 2px solid var(--icon-active-border-color);
         border-radius: 30px;
+        cursor: pointer;
+    }
+
+    &__pop-up {
+        position:absolute;
+        top: calc(100% - 103px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 165px;
+        height: 54px;
+        background-image: url(./../images/modal/pop-up.png);   
+        background-size: auto auto;    
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.2s;
+    }
+
+    &__warning-msg {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--warning-msg-text);
+        transform: translateY(-25%);
+    }
+
+    &.is-valid {
+        .order-form__btn {
+            background: var(--hover-button-color);
+        }
+    }
+
+    &.is-invalid {
+        .order-form__btn {
+            border: 2px solid var(--alert-input-color);
+        }
+
+        .order-form__pop-up {
+            opacity: 1;
+            z-index: 3;
+        }
     }
 }
