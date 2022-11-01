@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelectorAll("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function e(){o.modal.classList.toggle("backdrop--is-hidden")}o.openModalBtn.forEach((o=>{console.log("AAA"),o.addEventListener("click",e)})),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.8281563e.js.map
