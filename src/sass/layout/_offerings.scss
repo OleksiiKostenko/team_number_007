@@ -178,6 +178,7 @@
     }
 }
 
+
 .offerings__dscr-btn {
     border: none;
     background-color: var(--secondary-site-color);
@@ -193,15 +194,34 @@
     &-arrow {
         margin-left: 8px;
 
-        @media screen and (min-width: 1280px) {
-            display: none;
-        }
+
+
+.offerings__dscr-btn {
+    @media screen and (max-width:1279px) {
+        display: block;
+        border: none;
+        background-color: var(--secondary-site-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px 0px;
+    }
+
+    @media screen and (min-width:1280px) {
+        display: none;
     }
 }
+
+.offerings__dscr-btn-arrow {
+    margin-left: 8px;
+
+    @media screen and (min-width:1280px) {
+        display: none;
+    }
+
 
 @media screen and (max-width: 1279px) {
     .offerings__btn-set {
         display: flex;
         align-items: center;
     }
-}
