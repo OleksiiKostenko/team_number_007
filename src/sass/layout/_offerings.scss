@@ -1,20 +1,3 @@
-// .offerings {
-
-
-
-//     @media screen and (min-width:768px) {
-
-
-//     }
-
-//     @media screen and (min-width:1280px) {
-
-
-//     }
-
-// }
-
-
 .offerings {
     @media screen and (max-width:767px) {
         background-image: url(../images/background/offerings-bg-mobile-01x.png);
@@ -205,6 +188,10 @@
 
     }
 
+    @media screen and (min-width:1280px) {
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (min-width:1280px) {
@@ -216,18 +203,33 @@
 
 }
 
-.offerings__dscr-btn {
-    border: none;
-    background-color: var(--secondary-site-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
 
-    &-arrow {
-        margin-left: 8px;
+.offerings__dscr-btn {
+    @media screen and (max-width:1279px) {
+        display: block;
+        border: none;
+        background-color: var(--secondary-site-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px 0px;
+    }
+
+    @media screen and (min-width:1280px) {
+        display: none;
+    }
+}
+
+.offerings__dscr-btn-arrow {
+    margin-left: 8px;
+
+    @media screen and (min-width:1280px) {
+        display: none;
     }
 
 }
+
+
 
 .offerings__btn-set {
     display: flex;
