@@ -1,6 +1,38 @@
 <section class="offerings container">
-  <p class="offerings__content-pic">me apple</p>
+  <picture>
+    <source
+      srcset="
+        ./images/offerings/offerings-apple-1x.png 1x,
+        ./images/offerings/offerings-apple-2x.png 2x
+      "
+      type="image/jpeg"
+      media="(min-width:1280px)"
+    />
 
+    <source
+      srcset="
+        ./images/offerings/offering-apple-tablet-1x.png 1x,
+        ./images/offerings/offering-apple-tablet-2x.png 2x
+      "
+      type="image/png"
+      media="(min-width:768px)"
+    />
+
+    <source
+      srcset="
+        ./images/offerings/mobile-apple-1x.png 1x,
+        ./images/offerings/mobile-apple-2x.png 2x
+      "
+      type="image/png"
+      media="(max-width:767px)"
+    />
+
+    <img
+      class="offering__picture"
+      src="./images/offerings/mobile-apple-1x.png"
+      alt="Apple"
+    />
+  </picture>
   <div class="offerings__box-desk">
     <h2 class="offerings__title">What’s Special About Our Offerings</h2>
     <p class="offerings__dscr">
@@ -10,7 +42,6 @@
     </p>
     <ul class="offerings__list">
       <li class="offerings__list-item">
-        <p class="offerings__list-icon"></p>
         <h3 class="offerings__subtitle">Fastest Delivery</h3>
         <p class="offerings__sub-dscr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -18,7 +49,6 @@
         </p>
       </li>
       <li class="offerings__list-item">
-        <p class="offerings__list-icon"></p>
         <h3 class="offerings__subtitle">Easy to order</h3>
         <p class="offerings__sub-dscr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -28,7 +58,10 @@
     </ul>
     <div class="offerings__btn-set">
       <button type="button" class="offerings__order-btn" data-modal-open>Order Now</button>
-      <button class="offerings__dscr-btn">Read More ></button>
+      <button class="offerings__dscr-btn">Read More<svg class="offerings__dscr-btn-arrow" width="5" height="9">
+          <use href="./images/icons.svg#icon-arrow-readmore"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

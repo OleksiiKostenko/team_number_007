@@ -12,10 +12,13 @@
     --warning-modal-color:#FE6060;
     --warning-msg-text: #FAEDEB;
     --modal-backdrop: rgba(94, 99, 99, 0.7);
+    --bgd-hero: #F5F5F5;
+
 
 }
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
