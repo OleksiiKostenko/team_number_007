@@ -1,6 +1,7 @@
 :root {
     --text-color-priority: #2C2C2C;
     --background-site-color: #FEFEFE;
+    --tablet-nav-color: #000000;
     --secondary-site-color: #FFE550;
     --background-btn-site-hover: #BBF330;
     --hover-button-color: #B5FF00;
@@ -9,10 +10,15 @@
     --buttom-border-hover-color:#597D00;
     --alert-input-color:#FF705D;
     --warning-modal-color:#FE6060;
+    --warning-msg-text: #FAEDEB;
+    --modal-backdrop: rgba(94, 99, 99, 0.7);
+    --bgd-hero: #F5F5F5;
+
 
 }
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +48,7 @@ img {
 }
 
 a {
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .list {

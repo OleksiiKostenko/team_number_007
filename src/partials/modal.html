@@ -1,0 +1,40 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <form action="#" class="modal__order-form order-form" name="myForm" id="order-form">
+            <button type="reset" class="modal__close-btn" data-modal-close>
+                <svg class="modal__svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-modal-close" class="modal__close-icon"></use>
+                </svg>
+            </button>
+            <strong class="order-form__title">Order Form</strong>
+            <label class="order-form__label" for="userName">Name</label>
+            <input type="text" name="userName" class="order-form__input" placeholder="Your name" id="userName" required
+                minlength="3" maxlength="25">
+            <p class="order-form__warning" id="userName-warning">
+                <svg width="11" height="11" class="order-form__warning-icon">
+                    <use href="./images/icons.svg#icon-warning"></use>
+                </svg>
+                <span></span>
+            </p>
+            <label class="order-form__label" for="userPhone">Phone number</label>
+            <input type="tel" name="userPhone" id="userPhone" class="order-form__input" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                required minlength="10" maxlength="13">
+            <p class="order-form__warning" id="userPhone-warning">
+                <svg width="11" height="11" class="order-form__warning-icon">
+                    <use href="./images/icons.svg#icon-warning"></use>
+                </svg>
+                <span></span>
+            </p>
+            <label class="order-form__label" for="userEmail">E-mail</label>
+            <input type="email" name="userEmail" id="userEmail" class="order-form__input" placeholder="example@gmail.com" id="input-mail"
+                required>
+            <p class="order-form__warning" id="userEmail-warning">
+                <svg width="11" height="11" class="order-form__warning-icon">
+                    <use href="./images/icons.svg#icon-warning"></use>
+                </svg>
+                <span></span>
+            </p>
+            <button type="submit" class="order-form__btn modal__button" id="sendButton">Send</button>
+            <div class="order-form__pop-up" id="form-errors"><span class="order-form__warning-msg">All fields are required</span></div>
+        </form>
+    </div>

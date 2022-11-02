@@ -9,10 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.svg" />
     <title>FoodSta</title>
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
-  <body>
+  <body id="home">
     <!-- header section -->
     <include src="./partials/header.html"></include>
 
@@ -37,7 +38,8 @@
     <!-- modal section -->
     <include src="./partials/modal.html"></include>
 
-    <!-- menu section -->
-    <include src="./partials/burger-menu.html"></include>
+    <script type="module" src="./js/burger-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/form-validation.js"></script>
   </body>
 </html>

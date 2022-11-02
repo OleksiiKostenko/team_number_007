@@ -1,0 +1,74 @@
+<header class="header">
+    <div class="container header__container">
+      <a href="./index.html" class="link logo header__logo"><svg width="66" height="52">
+        <use href="./images/icons.svg#icon-logo">
+        </use>
+      </svg></a>
+      <button
+        class="menu-toggle js-open-menu menu-toggle__open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="28" height="28">
+          <use href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu menu-toggle__close">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__nav-item">
+              <a
+                href="#home"
+                class="mobile-menu__nav-link mobile-menu__nav-link--current link"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#offerings" class="mobile-menu__nav-link link"
+                >Offerings</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#favorites" class="mobile-menu__nav-link link">Favorites</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+                <a href="#reviews" class="mobile-menu__nav-link link">Reviews</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+                <a href="#subscribe" class="mobile-menu__nav-link link">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav__wrapper">
+        <nav>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="#home" class="link nav__link nav__link--current"
+                >Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#offerings" class="link nav__link">Offerings</a>
+            </li>
+            <li class="nav__item">
+              <a href="#favorites" class="link nav__link">Favorites</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="link nav__link">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subscribe" class="link nav__link">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__button" data-modal-open>Order now</button>
+      </div>
+    </div>
+  </header>
+  
