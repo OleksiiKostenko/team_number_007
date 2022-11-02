@@ -104,11 +104,17 @@
     }
 }
 
+// slider__wrap
+.slider__wrap{
+    width: 100%;
+}
+
 // hero__img
 .hero__img {
     width: 292px;
     border: 14px solid var(--secondary-site-color);
     border-radius: 148.414px;
+    margin: 0 auto;
 
     @media screen and (min-width:1280px) {
         width: 528px;
@@ -131,6 +137,7 @@
     border: none;
     background-color: var(--background-icon-btn-color);
     padding: 0;
+    outline: none;
     cursor: pointer;
 
     @media screen and (min-width:1280px) {
@@ -145,7 +152,6 @@
         }
     }
 }
-
 
 // position slider__btn
 .slaider__btn--left {
