@@ -5,6 +5,7 @@
     line-height: 1.5;
     border-radius: 30px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .header__button {
@@ -13,7 +14,9 @@
     background-color: var(--background-btn-site-hover);
     border-style: none;
 
-    &:hover {
+    &:hover,
+    :focus,
+    :active {
         background-color: var(--hover-button-color);
     }
 }
@@ -24,12 +27,14 @@
     background-color: var(--background-btn-site-hover);
     border-style: none;
 
-    &:hover {
+    &:hover,
+    :focus,
+    :active {
         background-color: var(--hover-button-color);
     }
 }
 
-.offerings__button {
+.offerings__order-btn {
     @extend %button;
     padding: 10px 22px;
     margin-right: 24px;
@@ -37,20 +42,14 @@
     border: 2px solid var(--icon-active-border-color);
     border-radius: 30px;
 
+    &:hover,
+    :focus,
+    :active {
+        border-color: var(--buttom-border-hover-color);
+    }
+
     @media screen and (min-width: 1280px) {
         margin-right: 0;
-    }
-
-    &:active {
-        border-color: var(--buttom-border-hover-color);
-    }
-}
-
-@media screen and (min-width:1280px) {
-
-    .offerings__button:hover,
-    .offerings__button:focus {
-        border-color: var(--buttom-border-hover-color);
     }
 }
 
@@ -60,18 +59,22 @@
     background-color: var(--background-btn-site-hover);
     border-style: none;
 
-    &:hover {
+    &:hover,
+    :focus,
+    :active {
         background-color: var(--hover-button-color);
     }
 }
 
-.footer__button {
+.footer__btn {
     @extend %button;
     padding: 11px 22px;
     background-color: var(--background-icon-btn-color);
     border: 0.85px solid var(--icon-active-border-color);
 
-    &:hover {
+    &:hover,
+    :focus,
+    :active {
         background-color: var(--secondary-site-color);
     }
 }
@@ -82,7 +85,12 @@
     background-color: var(--background-icon-btn-color);
     border: 2px solid var(--icon-active-border-color);
 
-    &:hover {
-        background-color: var(--background-btn-site-hover);
-    }
+    // &:hover,
+    // :focus {
+    //     background-color: var(--background-btn-site-hover);
+    // }
+
+    // &:active {
+    //     background-color: var(--background-btn-site-hover);
+    // }
 }
