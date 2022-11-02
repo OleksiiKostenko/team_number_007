@@ -1,9 +1,10 @@
 .offerings {
-    background-color: var(--bgd-hero);
+
+    background-color: var(--background-site-color);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
+    
     @media screen and (max-width:767px) {
         background-image: url(../images/background/offerings-bg-mobile-01x.png);
         padding-top: 41px;
