@@ -87,6 +87,10 @@
         line-height: 1.4;
     }
 
+    &__warning {
+        display: none;
+    }
+
     &__input {
         display: block;
         padding: 14px 12px;
@@ -104,32 +108,40 @@
             margin-bottom: 0;
         }
 
-        &:invalid:not(.is-invalid):placeholder-shown {
-            border: 1px solid var(--icon-active-border-color);
-            margin-bottom: 24px;
+        // &:invalid:not(.is-invalid):placeholder-shown {
+        //     border: 1px solid var(--icon-active-border-color);
+        //     margin-bottom: 24px;
 
-            &+.order-form__warning {
-                display: none;
-            }
+        //     &+.order-form__warning {
+        //         display: none;
+        //     }
 
-            &:last-of-type {
-                margin-bottom: 32px;
-            }
-        }
+        //     &:last-of-type {
+        //         margin-bottom: 32px;
+        //     }
+        // }
 
-        &.is-valid {
-            &:last-of-type {
-                margin-bottom: 32px;
-            }
-
-            &+.order-form__warning {
-                display: none;
-            }
-        }
+        // &.is-valid {
+        //     & ~ .order-form__btn {
+        //         background-color: var(--hover-button-color);
+        //     }
+        // }
 
         &.is-invalid {
             border-color: var(--alert-input-color);
             margin-bottom: 0;
+
+            & ~ .order-form__btn {
+                border: 2px solid var(--alert-input-color);
+            }
+
+            &:last-of-type ~.order-form__btn {
+                margin-top: 17px;
+
+                @media screen and (min-width: 768px) {
+                    margin-top: 14px;
+                }
+            }
         }
 
         &.is-invalid + .order-form__warning {
@@ -142,7 +154,7 @@
             color: var(--alert-input-color);
 
             &:last-of-type {
-                margin-bottom: 14px;
+                margin-bottom: 0;
             }
 
             @media screen and (min-width: 768px) {
@@ -161,7 +173,7 @@
     }
 
     &__btn {
-        margin: 0 auto;
+        margin: 32px auto 0;
         max-width: 106px;
         padding: 10px 38px;
         background-color: var(--background-icon-btn-color);
@@ -205,9 +217,6 @@
     }
 
     &.is-invalid {
-        .order-form__btn {
-            border: 2px solid var(--alert-input-color);
-        }
 
         .order-form__pop-up {
             opacity: 1;

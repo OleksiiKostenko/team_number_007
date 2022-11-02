@@ -8,7 +8,7 @@ const errorMessages = {
 
 const validateEl = (el, setMessage = false) => {
     const validity = el.checkValidity();
-
+    console.log(el.validity)
     el.classList.toggle('is-invalid', !validity);
     el.classList.toggle('is-valid', validity);
 
@@ -29,6 +29,9 @@ document.querySelector('#sendButton').addEventListener('click', (e) => {
 
 form.querySelectorAll('input').forEach(el => {
     el.addEventListener('keyup', () => {
+        validateEl(el, true);
+    });
+    el.addEventListener('blur', () => {
         validateEl(el, true);
     });
 });
