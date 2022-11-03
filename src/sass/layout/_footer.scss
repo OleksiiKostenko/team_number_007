@@ -226,7 +226,7 @@
 }
 
 .mi {
-  fill: currentColor;
+  fill: var(--text-color-priority);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:active {
