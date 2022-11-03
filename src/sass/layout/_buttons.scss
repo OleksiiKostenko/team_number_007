@@ -4,12 +4,14 @@
     font-size: 13px;
     line-height: 1.5;
     border-radius: 30px;
+    color: var(--text-color-priority);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
 .header__button {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 6px 18px;
     background-color: var(--background-btn-site-hover);
     border-style: none;
@@ -23,6 +25,7 @@
 
 .hero__button {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 6px 18px;
     background-color: var(--background-btn-site-hover);
     border-style: none;
@@ -36,6 +39,7 @@
 
 .offerings__button {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 10px 22px;
     margin-right: 24px;
     background-color: var(--background-icon-btn-color);
@@ -55,6 +59,7 @@
 
 .subscribe__button {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 11px 22px;
     background-color: var(--background-btn-site-hover);
     border-style: none;
@@ -68,6 +73,7 @@
 
 .footer__btn {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 11px 22px;
     background-color: var(--background-icon-btn-color);
     border: 0.85px solid var(--icon-active-border-color);
@@ -81,6 +87,7 @@
 
 .modal__button {
     @extend %button;
+    color: var(--text-color-priority);
     padding: 10px 38px;
     background-color: var(--background-icon-btn-color);
     border: 2px solid var(--icon-active-border-color);
