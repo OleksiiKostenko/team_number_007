@@ -1,8 +1,26 @@
 .section-customers {
-background-color: var(--secondary-site-color);
-padding: 60px 20px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+background-image: url(/src/images/background/customers-say-mobile.png);
+padding-top: 60px;
+padding-bottom: 60px;
+margin-bottom: -42px;
+
+@media screen and (min-width: 480px) {
+    background-image: url(/src/images/background/customers-say-480.png);
 }
 
+@media screen and (min-width: 768px) {
+    margin-bottom: -74px;
+    background-image: url(/src/images/background/customers-say-tablet-full.png);
+}
+@media screen and (min-width: 1280px) {
+    background-image: url(/src/images/background/customers-say-desktop-full.png);
+    margin-bottom: -65px;
+}
+
+}
 .customers-title {
 font-weight: 700;
 font-size: 28px;
@@ -69,7 +87,7 @@ line-height: 150%;
 
 @media screen and (min-width: 768px) {
     .section-customers {
-        padding-bottom: 0;
+        padding-bottom: 120px;
         }
 
     .customers-list__item {
@@ -104,7 +122,7 @@ line-height: 150%;
 @media screen and (min-width: 1280px) {
 .section-customers {
 padding-top: 100px;
-padding-bottom: 0;
+padding-bottom: 200px;
 }
 .customers-list__item {
     width: 501px;
