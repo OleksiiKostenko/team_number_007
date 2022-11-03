@@ -56,19 +56,19 @@
     padding: 20px;
 
     border: 11px solid #ffe550;
-    border-radius: 139.658px;
+    border-radius: 50%;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
       border: 14px solid #ffe550;
-      border-radius: 167.166px;
+     
     }
 
     @media screen and (min-width: 1280px) {
       border: 16px solid #ffe550;
-      border-radius: 197px;
+    
     }
   }
 
@@ -83,7 +83,7 @@
       gap: 32px;
     }
     @media screen and (min-width: 1280px) {
-      gap: 4px;
+    justify-content: space-between;
          }
   }
 
