@@ -126,8 +126,8 @@
 // slider__btn
 .slaider__btn {
     position: absolute;
-    width: 28px;
-    height: 34px;
+    width: 34px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +140,8 @@
     cursor: pointer;
 
     @media screen and (min-width:1280px) {
-        width: 40px;
-        height: 48px;
+        width: 48px;
+        height: 40px;
 
         transition: 250ms linear;
 
@@ -175,10 +175,10 @@
 // btn__icon
 .btn__icon {
     width: 20px;
-    height: 11.5px;
+    height: 11px;
 
     @media screen and (min-width:1280px) {
         width: 29px;
-        height: 16px;
+        height: 17px;
     }
 }
