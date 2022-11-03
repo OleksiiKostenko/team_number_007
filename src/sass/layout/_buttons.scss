@@ -19,6 +19,7 @@
     &:hover,
     :focus,
     :active {
+        color: var(--text-color-priority);
         background-color: var(--hover-button-color);
     }
 }
@@ -33,6 +34,7 @@
     &:hover,
     :focus,
     :active {
+        color: var(--text-color-priority);
         background-color: var(--hover-button-color);
     }
 }
@@ -49,6 +51,7 @@
     &:hover,
     :focus,
     :active {
+        color: var(--text-color-priority);
         border-color: var(--buttom-border-hover-color);
     }
 
@@ -67,6 +70,7 @@
     &:hover,
     :focus,
     :active {
+        color: var(--text-color-priority);
         background-color: var(--hover-button-color);
     }
 }
@@ -81,6 +85,7 @@
     &:hover,
     :focus,
     :active {
+        color: var(--text-color-priority);
         background-color: var(--secondary-site-color);
     }
 }
