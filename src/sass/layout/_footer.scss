@@ -19,8 +19,10 @@
   }
 
   &__container {
+    padding-top: 60px;
     padding-bottom: 60px;
     @media screen and (min-width: 768px) {
+      padding-top: 100px;
       padding-bottom: 100px;
     }
   }
@@ -31,7 +33,6 @@
 
   &__mobile {
     display: flex;
-    padding-top: 50px;
     padding-bottom: 40px;
     @media screen and (min-width: 768px) {
       align-items: center;

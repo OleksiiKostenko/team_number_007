@@ -11,11 +11,13 @@
     position: relative;
 
     @media screen and (min-width: 768px) {
+        margin-bottom: -130px;
         height: 409px;
     }
 
     @media screen and (min-width:1280px) {
-        height: 608px;
+        height: 580px;
+        margin-bottom: -180px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,7 +31,6 @@
     line-height: 1.18;
     color: var(--text-color-priority);
     margin-bottom: 28px;
-    width: 280px;
 
     @media screen and (min-width:768px) {
         width: 537px;
@@ -49,7 +50,6 @@
     margin-bottom: 28px;
     font-size: 14px;
     line-height: 1.5;
-    width: 266px;
 
     @media screen and (min-width:768px) {
         width: 336px;
@@ -113,7 +113,7 @@
 .hero__img {
     width: 292px;
     border: 14px solid var(--secondary-site-color);
-    border-radius: 148.414px;
+    border-radius: 50%;
     margin: 0 auto;
 
     @media screen and (min-width:1280px) {
