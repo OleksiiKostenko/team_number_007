@@ -175,7 +175,7 @@
 
 .offerings__dscr-btn {
     border: none;
-    background-color: var(--secondary-site-color);
+    background-color: transparent;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
@@ -192,7 +192,7 @@
     @media screen and (max-width:1279px) {
         display: block;
         border: none;
-        background-color: var(--secondary-site-color);
+        background-color: transparent;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.5;
