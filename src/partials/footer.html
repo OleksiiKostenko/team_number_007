@@ -30,20 +30,25 @@
         </div>
       </div>
       <div>
-        <form class="footer__form">
-          <h3 class="footer__subtitle">Subscribe</h3>
-          <div class="footer__part">
-            <label for="mailfor"></label>
+        <h3 class="footer__subtitle">Subscribe</h3>
+        <div class="footer__wrap">
+          <form class="footer__form">
             <input
               type="email"
               name="mail"
-              id="mailfor"
               placeholder="Enter your email"
               class="footer__input"
+              required
             />
+            <span class="footer__warning">
+              <svg width="11" height="11">
+                <use href="./images/icons.svg#icon-warning"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </span>
             <button type="submit" class="footer__button">Subscribe</button>
-          </div>
-        </form>
+          </form>
+        </div>
         <p class="footer__input-p">
           By subscribing you agree to with our
           <a href="" class="footer__input-link">Privacy Policy</a>
