@@ -246,20 +246,21 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid var(--icon-active-border-color);
+  color: var(--text-color-priority);
   border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
     width: 60px;
     height: 60px;
+  }
+
+  &:active {
+    color: var(--icon-active-border-color);
   }
 }
 
 .mi {
   fill:currentColor;
-  color: var(--text-color-priority);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:active {
-    color: var(--icon-active-border-color);
-  }
 }
 
