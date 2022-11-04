@@ -29,7 +29,7 @@
     padding-bottom: 10px;
 }
 
-.nav__wrapper {
+.nav-wrapper {
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -182,12 +182,12 @@
         display: none;
     }
 
-    &__open:hover, &__open:focus {
+    &--open:hover, &--open:focus {
         fill: var(--secondary-site-color);
 
     }
 
-    &__close {
+    &--close {
         position: absolute;
         top: 4px;
         right: 4px;
