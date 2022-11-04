@@ -154,7 +154,7 @@
 
 // position slider__btn
 .slaider__btn--left {
-    left: 0;
+    left: -8px;
     transform: translateX(50%);
 
     @media screen and (min-width:1280px) {
@@ -163,7 +163,7 @@
 }
 
 .slaider__btn--rigth {
-    right: 0;
+    right: -8px;
     transform: translateX(-50%);
 
     @media screen and (min-width:1280px) {
