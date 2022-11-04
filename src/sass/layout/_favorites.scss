@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 
   &__item-mob {
@@ -77,15 +78,27 @@
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 32px;
-    }
-    @media screen and (min-width: 1280px) {
-    justify-content: space-between;
-         }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
   }
+
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+  }
+
+     &__item {
+       @media screen and (min-width: 1280px) {
+         flex-basis: calc((100% - 64px) / 3);
+       }
+     }
+
+  
 
   /////Ховери фокуси актив//////
   .favorites__link:hover .favorites__img,
