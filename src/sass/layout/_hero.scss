@@ -1,4 +1,4 @@
-.hero__section {
+.hero {
     background-color: var(--background-site-color);
     padding-top: 60px;
 
@@ -105,7 +105,7 @@
 }
 
 // slider__wrap
-.slider__wrap{
+.slider-wrap{
     width: 100%;
 }
 
@@ -124,7 +124,7 @@
 }
 
 // slider__btn
-.slaider__btn {
+.slider-btn {
     position: absolute;
     width: 34px;
     height: 28px;
@@ -153,7 +153,7 @@
 }
 
 // position slider__btn
-.slaider__btn--left {
+.slider-btn--left {
     left: -8px;
     transform: translateX(50%);
 
@@ -162,7 +162,7 @@
     }
 }
 
-.slaider__btn--rigth {
+.slider-btn--right {
     right: -8px;
     transform: translateX(-50%);
 
@@ -173,7 +173,7 @@
 
 
 // btn__icon
-.btn__icon {
+.btn-icon {
     width: 20px;
     height: 11px;
 
