@@ -1,20 +1,19 @@
 .footer {
-  
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
+  background-position:bottom, left 130px, top right;
+  background-size: 80%,30%,30%;
   background-repeat: no-repeat;
-  
-  background-image: url(../images/footer/footer-background-mobile.png);
+  background-image: url(/src/images/background/bottom-mobile.png), url(/src/images/background/apple-mobile.png), url(/src/images/background/citrus-mob.png);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/footer/footer-background-tablet.png);
-    background-position: bottom;
+    background-image: url(/src/images/background/bottom-tablet.png), url(/src/images/background/cutris-tablet.png);
+    background-position: bottom, top right;
+    background-size: cover, 27%;
+    
   }
 
   @media screen and (min-width: 1280px) {
-    background-size: contain;
+background-size: contain;
     background-image: url(../images/footer/footer-background-desktop.png);
   }
 
