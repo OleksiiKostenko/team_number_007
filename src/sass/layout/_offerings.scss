@@ -4,8 +4,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
-    @media screen and (max-width:767px) {
+
+    @media screen and (max-width:768px) {
         background-image: url(../images/background/offerings-bg-mobile-01x.png);
         padding-top: 41px;
         padding-bottom: 60px;
@@ -110,7 +110,7 @@
 @media screen and (min-width:768px) {
     .offerings__list {
         display: flex;
-        align-items: center;
+        // align-items: center;
     }
 }
 
@@ -175,7 +175,7 @@
 
 .offerings__dscr-btn {
     border: none;
-    color:var(--tablet-nav-color);
+    color: var(--tablet-nav-color);
     fill: currentColor;
     background-color: transparent;
     font-weight: 400;
@@ -218,4 +218,5 @@
     .offerings__btn-set {
         display: flex;
         align-items: center;
-    }}
+    }
+}
