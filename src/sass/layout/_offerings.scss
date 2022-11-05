@@ -60,6 +60,7 @@
 
 .offerings__picture {
     width: 100%;
+    margin-bottom: 50px;
 
     @media screen and (min-width:768px) {
         width: 704px;
@@ -127,7 +128,16 @@
 
 .offerings__list-item {
     position: relative;
+    margin-bottom: 84px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
+
+.offerings__list-item:last-child {
+    margin-bottom: 27px;
+    }
 
 .offerings__list-item::before {
     position: absolute;
@@ -148,9 +158,6 @@
 }
 
 .offerings__list-item:first-child {
-    @media screen and (max-width: 768px) {
-        margin-bottom: 84px;
-    }
 
     @media screen and (min-width: 768px) {
         margin-right: 116px;
@@ -172,7 +179,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 28px;
 
     @media screen and (min-width:320px) and (max-width:350px) {
         padding-right: 20px;
