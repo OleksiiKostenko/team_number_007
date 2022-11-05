@@ -4,18 +4,17 @@
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  
   background-image: url(../images/footer/footer-background-mobile.png);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/footer/footer-background-tablet.png);
+    background-position: bottom;
   }
 
   @media screen and (min-width: 1280px) {
     background-size: contain;
-    background-position: bottom;
-
     background-image: url(../images/footer/footer-background-desktop.png);
   }
 
