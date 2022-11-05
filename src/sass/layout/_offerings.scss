@@ -137,6 +137,10 @@
 
 .offerings__list-item:last-child {
     margin-bottom: 27px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
     }
 
 .offerings__list-item::before {
