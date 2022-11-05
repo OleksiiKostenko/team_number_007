@@ -1,5 +1,5 @@
 .footer {
-  max-width: 480px;
+  
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -11,12 +11,12 @@
     background-size: contain;
     background-position: bottom;
     background-image: url(../images/footer/footer-background-tablet.png);
-    max-width: 768px;
+    
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/footer/footer-background-desktop.png);
-    max-width: 1280px;
+    
   }
 
   &__container {
