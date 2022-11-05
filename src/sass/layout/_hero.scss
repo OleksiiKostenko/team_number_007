@@ -157,20 +157,22 @@
 
 // position slider__btn
 .slider-btn--left {
-    left: -8px;
+    left: -14px;
     transform: translateX(50%);
 
     @media screen and (min-width:1280px) {
         transform: translateX(80%);
+        left: -25px;
     }
 }
 
 .slider-btn--right {
-    right: -8px;
+    right: -14px;
     transform: translateX(-50%);
 
     @media screen and (min-width:1280px) {
         transform: translateX(-80%);
+        right: -25px;
     }
 }
 
