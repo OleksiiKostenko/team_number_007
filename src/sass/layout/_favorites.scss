@@ -45,12 +45,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+
   }
 
   &__item-mob {
-    margin-left: auto;
-    margin-right: auto;
+      justify-content: center;
+        display: flex;
   }
+
+  
+
 
   &__img {
     padding: 20px;
@@ -73,19 +78,17 @@
   }
 
   &__list {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
 
   @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px
-  }
-
-  @media screen and (min-width: 1280px) {
-    justify-content: space-between;
+  gap: 31px;
+  justify-content: space-between;
 }
+
   }
 
 
