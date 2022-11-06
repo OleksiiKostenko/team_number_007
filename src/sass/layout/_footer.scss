@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-image: url(/src/images/background/bottom-mobile.png), url(/src/images/background/apple-mobile.png), url(/src/images/background/citrus-mob.png);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     background-image: url(/src/images/background/bottom-tablet.png), url(/src/images/background/cutris-tablet.png);
@@ -239,8 +240,8 @@ background-size: contain;
   
   width: 50px;
   height: 50px;
-  bottom: 3vh;
-  right: 5vw;
+  bottom: 3%;
+  right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;

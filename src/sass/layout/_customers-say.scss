@@ -5,6 +5,7 @@
     background-size: 100% 100%;
     background-image: url(/src/images/background/customers-say-mobile.png);
     margin-bottom: -40px;
+    overflow: hidden;
 
     @media screen and (min-width: 480px) {
             background-image: url(/src/images/background/customers-say-480.png);
