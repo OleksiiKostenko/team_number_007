@@ -155,6 +155,12 @@
         opacity: 1;
         }
 
+    @media screen and (min-width: 767.99px) {
+        display: none;
+    }    
+
+
+
 }
 
 .menu-toggle {
