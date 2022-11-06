@@ -1,6 +1,5 @@
-.hero__section {
+.hero {
     background-color: var(--background-site-color);
-    padding-top: 60px;
 
     @media screen and (min-width:1280px) {
        padding-top: 0;
@@ -8,16 +7,20 @@
 }
 
 .hero__pre-wrap {
+    padding-top: 60px;
+    padding-bottom: 50px;
     position: relative;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: -130px;
-        height: 409px;
+        margin-bottom: -100px;
+        padding-bottom: 70px;
+        
     }
 
     @media screen and (min-width:1280px) {
-        height: 580px;
-        margin-bottom: -180px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: -170px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -80,7 +83,7 @@
 
 // hero__wrap
 .hero__wrap {
-    width: 336px;
+    width: 320px;
     height: 320px;
     display: flex;
     justify-content: center;
@@ -93,19 +96,19 @@
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: -20px;
+        right: 40px;
     }
 
     @media screen and (min-width:1280px) {
         position: relative;
-        width: 608px;
+        width: 580px;
         height: 580px;
     }
 }
 
 // slider__wrap
-.slider__wrap{
+.slider-wrap{
     width: 100%;
 }
 
@@ -124,7 +127,7 @@
 }
 
 // slider__btn
-.slaider__btn {
+.slider-btn {
     position: absolute;
     width: 34px;
     height: 28px;
@@ -153,29 +156,32 @@
 }
 
 // position slider__btn
-.slaider__btn--left {
-    left: -8px;
+.slider-btn--left {
+    left: -14px;
     transform: translateX(50%);
 
     @media screen and (min-width:1280px) {
         transform: translateX(80%);
+        left: -25px;
     }
 }
 
-.slaider__btn--rigth {
-    right: -8px;
+.slider-btn--right {
+    right: -14px;
     transform: translateX(-50%);
 
     @media screen and (min-width:1280px) {
         transform: translateX(-80%);
+        right: -25px;
     }
 }
 
 
-// btn__icon
+
 .btn__icon {
     width: 11px;
     height: 20px;
+
 
     @media screen and (min-width:1280px) {
         width: 17px;

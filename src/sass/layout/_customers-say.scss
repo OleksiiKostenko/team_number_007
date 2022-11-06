@@ -1,26 +1,41 @@
-.section-customers {
-background-repeat: no-repeat;
-background-size: cover;
-background-position: bottom;
-background-image: url(/src/images/background/customers-say-mobile.png);
+.customers{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(/src/images/background/customers-say-mobile.png);
+    margin-bottom: -40px;
+
+    @media screen and (min-width: 480px) {
+            background-image: url(/src/images/background/customers-say-480.png);
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: -73px;
+            background-image: url(/src/images/background/customers-say-tablet-full.png);
+        }
+    
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/background/customers-say-desktop-full.png);
+            margin-bottom: -65px;
+        }
+
+
+&__container {
 padding-top: 60px;
 padding-bottom: 60px;
-margin-bottom: -42px;
-
-@media screen and (min-width: 480px) {
-    background-image: url(/src/images/background/customers-say-480.png);
-}
-
 @media screen and (min-width: 768px) {
-    margin-bottom: -74px;
-    background-image: url(/src/images/background/customers-say-tablet-full.png);
-}
-@media screen and (min-width: 1280px) {
-    background-image: url(/src/images/background/customers-say-desktop-full.png);
-    margin-bottom: -65px;
-}
+       padding-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
 
 }
+}
+
 .customers-title {
 font-weight: 700;
 font-size: 28px;

@@ -1,11 +1,12 @@
 .favorites {
+  &__container{
   padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
+  }}
   ////Класи для заголовку та тексту/////
   &__title {
     font-size: 28px;
@@ -45,12 +46,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+
   }
 
   &__item-mob {
-    margin-left: auto;
-    margin-right: auto;
+      justify-content: center;
+        display: flex;
   }
+
+  
+
 
   &__img {
     padding: 20px;
@@ -73,19 +79,20 @@
   }
 
   &__list {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 32px;
-    }
-    @media screen and (min-width: 1280px) {
-    justify-content: space-between;
-         }
+  @media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+  justify-content: space-between;
+}
+
   }
+
+
 
   /////Ховери фокуси актив//////
   .favorites__link:hover .favorites__img,

@@ -1,67 +1,72 @@
-<section class="offerings container" id="offerings">
-  <picture>
-    <source
-      srcset="
-        ./images/offerings/offerings-apple-1x.png 1x,
-        ./images/offerings/offerings-apple-2x.png 2x
-      "
-      type="image/jpeg"
-      media="(min-width:1280px)"
-    />
+<section class="offerings" id="offerings">
+  <div class="container offerings__containe">
+    <picture>
+      <source
+        srcset="
+          ./images/offerings/offerings-apple-1x.png 1x,
+          ./images/offerings/offerings-apple-2x.png 2x
+        "
+        type="image/jpeg"
+        media="(min-width:1280px)"
+      />
 
-    <source
-      srcset="
-        ./images/offerings/offering-apple-tablet-1x.png 1x,
-        ./images/offerings/offering-apple-tablet-2x.png 2x
-      "
-      type="image/png"
-      media="(min-width:768px)"
-    />
+      <source
+        srcset="
+          ./images/offerings/offering-apple-tablet-1x.png 1x,
+          ./images/offerings/offering-apple-tablet-2x.png 2x
+        "
+        type="image/png"
+        media="(min-width:768px)"
+      />
 
-    <source
-      srcset="
-        ./images/offerings/mobile-apple-1x.png 1x,
-        ./images/offerings/mobile-apple-2x.png 2x
-      "
-      type="image/png"
-      media="(max-width:767px)"
-    />
+      <source
+        srcset="
+          ./images/offerings/mobile-apple-1x.png 1x,
+          ./images/offerings/mobile-apple-2x.png 2x
+        "
+        type="image/png"
+        media="(max-width:767px)"
+      />
 
-    <img
-      class="offering__picture"
-      src="./images/offerings/mobile-apple-1x.png"
-      alt="Apple"
-    />
-  </picture>
-  <div class="offerings__box-desk">
-    <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-    <p class="offerings__dscr">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
-    <ul class="offerings__list">
-      <li class="offerings__list-item">
-        <h3 class="offerings__subtitle">Fastest Delivery</h3>
-        <p class="offerings__sub-dscr">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-      <li class="offerings__list-item">
-        <h3 class="offerings__subtitle">Easy to order</h3>
-        <p class="offerings__sub-dscr">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-    </ul>
-    <div class="offerings__btn-set">
-      <button type="button" class="offerings__button" data-modal-open>Order Now</button>
-      <button type="button" class="offerings__dscr-btn">Read More<svg class="offerings__dscr-btn-arrow" width="5" height="9">
-          <use href="./images/icons.svg#icon-arrow-readmore"></use>
-        </svg>
-      </button>
+      <img
+        class="offerings__picture"
+        src="./images/offerings/mobile-apple-1x.png"
+        alt="Apple"
+      />
+    </picture>
+    <div class="offerings__box-desk" data-aos="fade-up">
+      <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+      <p class="offerings__dscr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__list">
+        <li class="offerings__list-item">
+          <h3 class="offerings__subtitle">Fastest Delivery</h3>
+          <p class="offerings__sub-dscr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__list-item">
+          <h3 class="offerings__subtitle">Easy to order</h3>
+          <p class="offerings__sub-dscr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="offerings__btn-set">
+        <button type="button" class="offerings__button animate__animated animate__pulse animate__infinite animate__slow" data-modal-open>
+          Order Now
+        </button>
+        <button type="button" class="offerings__dscr-btn">
+          Read More<svg class="offerings__dscr-btn-arrow" width="5" height="9">
+            <use href="./images/icons.svg#icon-arrow-readmore"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

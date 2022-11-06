@@ -1,87 +1,134 @@
 <!-- hero__section -->
-<section class="hero__section container">
-    <div class="hero__pre-wrap">
-        <div class="hero__inner-wrap">
-            <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros
-                elementum tristique.
-                Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+<section class="hero">
+  <div class="hero__pre-wrap container">
+    <div class="hero__inner-wrap">
+      <h1 class="hero__title animate__animated animate__bounceInDown">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
 
-            <!-- hero__button -->
-            <button class="hero__button" type="button" data-modal-open>Order Now</button>
-        </div>
-
-        <!-- hero__wrap -->
-        <div class="hero__wrap">
-
-            <!-- sliders divs -->
-            <div class="slider__wrap autoplay">
-
-                <!-- slider 1 -->
-                <div>
-
-                    <!-- picture -->
-                    <picture>
-                        <source media="(min-windth: 768px)" srcset="./images/hero/tablet-hero-photo1.png 1x, 
-                            ./images/hero/tablet-hero-photo1@2x.png 2x">
-
-                        <source media="(min-windth: 1280px)" srcset="./images/hero/hero-photo1.png 1x, 
-                            ./images/hero/hero-photo1@2x.png 2x">
-
-                        <img class="hero__img" srcset="
-                                ./images/hero/hero-photo1.png 1x,
-                                ./images/hero/hero-photo1@2x.png 2x" src="./images/hero/hero-photo1.png"
-                            alt="plate with sause" loading="lazy">
-                    </picture>
-                </div>
-
-                <!-- slider 2 -->
-                <div>
-                    <picture>
-                        <source media="(min-windth: 768px)" srcset="./images/hero/tablet-hero-photo2.png 1x, 
-                            ./images/hero/tablet-hero-photo2@2x.png 2x">
-
-                        <source media="(min-windth: 1280px)" srcset="./images/hero/hero-photo2.png 1x, 
-                            ./images/hero/hero-photo2@2x.png 2x">
-
-                        <img class="hero__img" srcset="
-                            ./images/hero/hero-photo2.png 1x,
-                            ./images/hero/hero-photo2@2x.png 2x" src="./images/hero/hero-photo1.png"
-                            alt="plate with sause" loading="lazy">
-                    </picture>
-                </div>
-
-                <!-- slider 3 -->
-                <div>
-                    <picture>
-                        <source media="(min-windth: 768px)" srcset="./images/hero/tablet-hero-photo3.png 1x, 
-                            ./images/hero/tablet-hero-photo3@2x.png 2x">
-
-                        <source media="(min-windth: 1280px)" srcset="./images/hero/hero-photo3.png 1x, 
-                            ./images/hero/hero-photo3@2x.png 2x">
-
-                        <img class="hero__img" srcset="
-                            ./images/hero/hero-photo3.png 1x,
-                            ./images/hero/hero-photo3@2x.png 2x" src="./images/hero/hero-photo1.png"
-                            alt="plate with sause" loading="lazy">
-                    </picture>
-                </div>
-            </div>
-
-            <!-- slider__button -->
-            <button class="slaider__btn slaider__btn--left" type="button">
-                <svg class="btn__icon">
-                    <use href="./images/icons.svg#icon-arrow-left"></use>
-                </svg>
-            </button>
-
-            <button class="slaider__btn slaider__btn--rigth" type="button">
-                <svg class="btn__icon">
-                    <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
-        </div>
+      <!-- hero__button -->
+      <button class="hero__button animate__animated animate__pulse animate__infinite animate__slow" type="button" data-modal-open>
+        Order Now
+      </button>
     </div>
+
+    <!-- hero__wrap -->
+    <div class="hero__wrap">
+      <!-- sliders divs -->
+      <div class="slider-wrap autoplay">
+        <!-- slider 1 -->
+        <div>
+          <!-- picture -->
+          <picture>
+            <source
+              media="(min-windth: 768px)"
+              srcset="
+                ./images/hero/tablet-hero-photo1.png    1x,
+                ./images/hero/tablet-hero-photo1@2x.png 2x
+              "
+            />
+
+            <source
+              media="(min-windth: 1280px)"
+              srcset="
+                ./images/hero/hero-photo1.png    1x,
+                ./images/hero/hero-photo1@2x.png 2x
+              "
+            />
+
+            <img
+              class="hero__img"
+              srcset="
+                ./images/hero/hero-photo1.png    1x,
+                ./images/hero/hero-photo1@2x.png 2x
+              "
+              src="./images/hero/hero-photo1.png"
+              alt="plate with sause"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <!-- slider 2 -->
+        <div>
+          <picture>
+            <source
+              media="(min-windth: 768px)"
+              srcset="
+                ./images/hero/tablet-hero-photo2.png    1x,
+                ./images/hero/tablet-hero-photo2@2x.png 2x
+              "
+            />
+
+            <source
+              media="(min-windth: 1280px)"
+              srcset="
+                ./images/hero/hero-photo2.png    1x,
+                ./images/hero/hero-photo2@2x.png 2x
+              "
+            />
+
+            <img
+              class="hero__img"
+              srcset="
+                ./images/hero/hero-photo2.png    1x,
+                ./images/hero/hero-photo2@2x.png 2x
+              "
+              src="./images/hero/hero-photo1.png"
+              alt="plate with sause"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <!-- slider 3 -->
+        <div>
+          <picture>
+            <source
+              media="(min-windth: 768px)"
+              srcset="
+                ./images/hero/tablet-hero-photo3.png    1x,
+                ./images/hero/tablet-hero-photo3@2x.png 2x
+              "
+            />
+
+            <source
+              media="(min-windth: 1280px)"
+              srcset="
+                ./images/hero/hero-photo3.png    1x,
+                ./images/hero/hero-photo3@2x.png 2x
+              "
+            />
+
+            <img
+              class="hero__img"
+              srcset="
+                ./images/hero/hero-photo3.png    1x,
+                ./images/hero/hero-photo3@2x.png 2x
+              "
+              src="./images/hero/hero-photo1.png"
+              alt="plate with sause"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- slider__button -->
+      <button class="slider-btn slider-btn--left" type="button">
+        <svg class="btn-icon">
+          <use href="./images/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+
+      <button class="slider-btn slider-btn--right" type="button">
+        <svg class="btn-icon">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>

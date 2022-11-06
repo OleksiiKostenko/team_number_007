@@ -20,6 +20,7 @@
 
     @media screen and (max-width: 767px) {
       margin: 0 auto;
+      margin-bottom: 17px;
       width: 280px;
     }
 
@@ -41,7 +42,7 @@
   &__title {
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.5;
+    line-height: 1.2;
     color: var(--text-color-priority);
     margin-bottom: 20px;
 
